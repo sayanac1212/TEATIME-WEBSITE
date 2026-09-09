@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tea Time - Artisan Teas, Craft Coffee & Gourmet Snacks Lounge. Experience ultimate relaxation with premium brews and freshly baked treats.">
+    <title>TEA TIME | Artisan Tea & Coffee Lounge</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span><i class="fa-solid fa-clock"></i> Open Daily: 7:00 AM - 10:00 PM</span>
+            <span><i class="fa-solid fa-sparkles"></i> Special Afternoon Tea Set Available Daily 2 PM - 5 PM</span>
+            <span class="contact-info"><i class="fa-solid fa-phone"></i> +1 (800) TEA-TIME</span>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <div class="logo-text">
+                    <span class="brand-name">TEA TIME</span>
+                    <span class="brand-sub">LOUNGE & CAFE</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu & Order</a>
+                <a href="#teas" class="nav-link">Tea Selection</a>
+                <a href="#coffee" class="nav-link">Coffee Bar</a>
+                <a href="#snacks" class="nav-link">Gourmet Snacks</a>
+                <a href="#experience" class="nav-link">About Us</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search tea, coffee, snacks...">
+                    <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 4-Image Full Fitting Slider -->
+    <section class="hero-section" id="home">
+        <div class="slider-container" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="images/slider1.png" alt="Artisanal Tea Pouring" class="slider-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag"><i class="fa-solid fa-leaf"></i> Master Blend Experience</span>
+                    <h1 class="slide-title">Artisanal Tea Rituals</h1>
+                    <p class="slide-desc">Hand-picked organic tea leaves infused to warm perfection. Savor every aromatic moment in our peaceful ambient lounge.</p>
+                    <div class="slide-btns">
+                        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-mug-hot"></i> Explore Tea Menu</a>
+                        <a href="#experience" class="btn btn-glass">Our Brew Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="images/slider2.png" alt="Artisan Coffee Crafting" class="slider-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag"><i class="fa-solid fa-fire"></i> Freshly Roasted Daily</span>
+                    <h1 class="slide-title">Artisan Coffee Bar</h1>
+                    <p class="slide-desc">Rich double-shot espresso featuring golden velvety crema, balanced aromas, and handcrafted specialty foam art.</p>
+                    <div class="slide-btns">
+                        <a href="#coffee" class="btn btn-primary"><i class="fa-solid fa-mug-saucer"></i> Discover Coffee Bar</a>
+                        <a href="#menu" class="btn btn-glass">Order Online</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="images/slider3.png" alt="Royal Afternoon Tea" class="slider-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag"><i class="fa-solid fa-crown"></i> High Tea Delight</span>
+                    <h1 class="slide-title">Royal Afternoon Tea</h1>
+                    <p class="slide-desc">An elegant 3-tier presentation featuring warm oven scones, fresh berry jams, delicate macarons, and boutique teas.</p>
+                    <div class="slide-btns">
+                        <a href="#snacks" class="btn btn-primary"><i class="fa-solid fa-cookie-bite"></i> View Afternoon Tea</a>
+                        <a href="#menu" class="btn btn-glass">Book A Table</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="images/slider4.png" alt="Fresh Pastries & Snacks" class="slider-img">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag"><i class="fa-solid fa-wheat-awn"></i> Baked Fresh Morningly</span>
+                    <h1 class="slide-title">Gourmet Snacks & Pastries</h1>
+                    <p class="slide-desc">Pair your favorite brew with our flaky French butter croissants, traditional English scones, macarons, and crispy almond biscotti.</p>
+                    <div class="slide-btns">
+                        <a href="#snacks" class="btn btn-primary"><i class="fa-solid fa-stroopwafel"></i> Browse 4 Snacks</a>
+                        <a href="#menu" class="btn btn-glass">Special Offers</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="slider-arrow prev-arrow" id="prevSlide" aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next-arrow" id="nextSlide" aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Slider Indicators / Dots -->
+            <div class="slider-indicators" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Banner -->
+    <section class="highlights-section">
+        <div class="container highlights-grid">
+            <div class="highlight-card">
+                <div class="hl-icon"><i class="fa-solid fa-seedling"></i></div>
+                <div class="hl-info">
+                    <h3>100% Organic Tea</h3>
+                    <p>Directly sourced from single-estate tea gardens</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <div class="hl-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+                <div class="hl-info">
+                    <h3>Master Baristas</h3>
+                    <p>Precision temperature brewing & artisanal extraction</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <div class="hl-icon"><i class="fa-solid fa-bread-slice"></i></div>
+                <div class="hl-info">
+                    <h3>Fresh Oven Baked</h3>
+                    <p>Handcrafted daily pastries & 4 signature snacks</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <div class="hl-icon"><i class="fa-solid fa-couch"></i></div>
+                <div class="hl-info">
+                    <h3>Serene Ambience</h3>
+                    <p>Cozy seating, free high-speed Wi-Fi, relaxed vibe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tantalize Your Senses</span>
+                <h2 class="section-title">Tea Time Menu Collection</h2>
+                <p class="section-desc">Explore our handpicked teas, signature espresso brews, and fresh gourmet snacks.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-category="all">
+                    <i class="fa-solid fa-border-all"></i> All Items
+                </button>
+                <button class="filter-btn" data-category="tea">
+                    <i class="fa-solid fa-leaf"></i> Artisanal Teas
+                </button>
+                <button class="filter-btn" data-category="coffee">
+                    <i class="fa-solid fa-mug-hot"></i> Coffee Bar
+                </button>
+                <button class="filter-btn" data-category="snack">
+                    <i class="fa-solid fa-cookie"></i> Gourmet 4 Snacks
+                </button>
+            </div>
+
+            <!-- Products Cards Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- JavaScript will dynamically populate and filter cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Snacks Spotlight Section (4 Snacks Highlight) -->
+    <section class="snacks-spotlight-section" id="snacks">
+        <div class="container">
+            <div class="spotlight-banner">
+                <div class="spotlight-text">
+                    <span class="badge-gold"><i class="fa-solid fa-star"></i> Featured Bakery</span>
+                    <h2>Our 4 Signature Tea Time Snacks</h2>
+                    <p>Carefully curated to pair seamlessly with your hot tea or fresh espresso. Prepared daily by our head pastry chef.</p>
+                </div>
+            </div>
+
+            <div class="snacks-quad-grid">
+                <!-- Snack 1 -->
+                <div class="snack-card-featured">
+                    <div class="snack-img-box">
+                        <img src="images/snack_croissant.png" alt="Fresh French Butter Croissant">
+                        <span class="snack-num">01</span>
+                        <span class="snack-badge">Chef's Pick</span>
+                    </div>
+                    <div class="snack-details">
+                        <div class="snack-meta">
+                            <span class="snack-cat"><i class="fa-solid fa-wheat-awn"></i> French Pastry</span>
+                            <span class="snack-price">$4.50</span>
+                        </div>
+                        <h3>French Butter Croissant</h3>
+                        <p>Golden, flaky 27-layer butter croissant baked fresh every morning with pure Normandy butter.</p>
+                        <button class="btn btn-outline quick-add-btn" data-id="snack-1">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Snack 2 -->
+                <div class="snack-card-featured">
+                    <div class="snack-img-box">
+                        <img src="images/snack_scones.png" alt="English Scones with Jam & Cream">
+                        <span class="snack-num">02</span>
+                        <span class="snack-badge">Tea Favorite</span>
+                    </div>
+                    <div class="snack-details">
+                        <div class="snack-meta">
+                            <span class="snack-cat"><i class="fa-solid fa-crown"></i> British Classic</span>
+                            <span class="snack-price">$5.25</span>
+                        </div>
+                        <h3>English Scones Set</h3>
+                        <p>Two warm golden baked scones served with authentic Devonshire clotted cream & organic wild strawberry jam.</p>
+                        <button class="btn btn-outline quick-add-btn" data-id="snack-2">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Snack 3 -->
+                <div class="snack-card-featured">
+                    <div class="snack-img-box">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80" alt="Parisian Macaron Quartet">
+                        <span class="snack-num">03</span>
+                        <span class="snack-badge">Popular</span>
+                    </div>
+                    <div class="snack-details">
+                        <div class="snack-meta">
+                            <span class="snack-cat"><i class="fa-solid fa-cookie"></i> Sweet Delicacy</span>
+                            <span class="snack-price">$6.75</span>
+                        </div>
+                        <h3>Parisian Macaron Assortment</h3>
+                        <p>Box of 4 delicate almond macarons: Pistachio, Sicilian Lemon, Salted Caramel & Raspberry Velvet.</p>
+                        <button class="btn btn-outline quick-add-btn" data-id="snack-3">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Snack 4 -->
+                <div class="snack-card-featured">
+                    <div class="snack-img-box">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80" alt="Almond Biscotti">
+                        <span class="snack-num">04</span>
+                        <span class="snack-badge">Crunchy</span>
+                    </div>
+                    <div class="snack-details">
+                        <div class="snack-meta">
+                            <span class="snack-cat"><i class="fa-solid fa-stroopwafel"></i> Italian Classic</span>
+                            <span class="snack-price">$3.95</span>
+                        </div>
+                        <h3>Tuscan Almond Biscotti</h3>
+                        <p>Twice-baked crunchy Italian biscuits roasted with whole Mediterranean almonds & vanilla bean zest.</p>
+                        <button class="btn btn-outline quick-add-btn" data-id="snack-4">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / About Section -->
+    <section class="experience-section" id="experience">
+        <div class="container experience-grid">
+            <div class="experience-content">
+                <span class="section-subtitle">Crafting Memories</span>
+                <h2>The Tea Time Experience</h2>
+                <p>Founded on a passion for authentic tea traditions and specialty coffee roasting, Tea Time is a sanctuary away from the bustle of daily life.</p>
+                
+                <div class="exp-features">
+                    <div class="exp-feat">
+                        <i class="fa-solid fa-temperature-half"></i>
+                        <div>
+                            <h4>Precision Steep Temperature</h4>
+                            <p>Each leaf variety is steeped at exact water temperatures (75°C - 95°C) to extract subtle floral notes without bitterness.</p>
+                        </div>
+                    </div>
+                    <div class="exp-feat">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <div>
+                            <h4>Artisanal Coffee Blends</h4>
+                            <p>Ethically traded Arabica beans roasted in micro-batches for smooth dark chocolate and caramel undertones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">35+</span>
+                        <span class="stat-lbl">Tea Varieties</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-lbl">Natural & Fresh</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">4.9 ★</span>
+                        <span class="stat-lbl">Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-image-wrapper">
+                <div class="img-frame frame-main">
+                    <img src="images/slider1.png" alt="Tea Culture">
+                </div>
+                <div class="img-frame frame-sub">
+                    <img src="images/slider3.png" alt="Afternoon Tea">
+                </div>
+                <div class="experience-badge">
+                    <span class="badge-year">Est. 2018</span>
+                    <span class="badge-text">Authentic Tea Lounge</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Lounge Vibe Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Voices of Delight</span>
+                <h2 class="section-title">What Tea Lovers Say</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The Masala Chai paired with fresh English scones is my absolute ritual every weekend. The slider design on their website made me visit in person!"</p>
+                    <div class="reviewer">
+                        <div class="rev-avatar">E</div>
+                        <div>
+                            <strong>Eleanor Vance</strong>
+                            <span>Tea Connoisseur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best coffee espresso in town. The atmosphere is serene and their 4 signature snacks are baked to absolute perfection."</p>
+                    <div class="reviewer">
+                        <div class="rev-avatar">M</div>
+                        <div>
+                            <strong>Marcus Chen</strong>
+                            <span>Daily Patron</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The Royal Afternoon tea set was divine. Incredible presentation, velvety Matcha latte, and warm butter croissants!"</p>
+                    <div class="reviewer">
+                        <div class="rev-avatar">S</div>
+                        <div>
+                            <strong>Sophia Bennett</strong>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="brand-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="logo-text">
+                        <span class="brand-name">TEA TIME</span>
+                        <span class="brand-sub">LOUNGE & CAFE</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Your sanctuary for artisanal teas, roasted espresso blends, and handcrafted pastry snacks.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home Banner Slider</a></li>
+                    <li><a href="#teas">Artisanal Tea Menu</a></li>
+                    <li><a href="#coffee">Specialty Coffee Bar</a></li>
+                    <li><a href="#snacks">Our 4 Snacks Collection</a></li>
+                    <li><a href="#experience">Lounge Ambience</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Opening Hours</h4>
+                <ul class="hours-list">
+                    <li><span>Mon - Fri:</span> <strong>7:00 AM - 9:00 PM</strong></li>
+                    <li><span>Sat - Sun:</span> <strong>8:00 AM - 10:00 PM</strong></li>
+                    <li><span>Afternoon Tea:</span> <strong>2:00 PM - 5:00 PM</strong></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Tea Time Club</h4>
+                <p>Subscribe for seasonal blend releases and exclusive afternoon tea offers.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 TEA TIME Lounge & Artisan Cafe. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Brewing Guidelines</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Item Quick View Modal -->
+    <div class="modal-backdrop" id="quickViewModal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalCloseBtn">&times;</button>
+            <div class="modal-grid" id="modalContent">
+                <!-- Dynamically loaded via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop">
+        <div class="cart-drawer" id="cartDrawer">
+            <div class="cart-header">
+                <h3><i class="fa-solid fa-basket-shopping"></i> Your Tea Basket</h3>
+                <button class="close-cart" id="closeCartBtn">&times;</button>
+            </div>
+            <div class="cart-body" id="cartItemsList">
+                <p class="empty-cart-msg">Your tea basket is currently empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-summary-line">
+                    <span>Subtotal:</span>
+                    <strong id="cartSubtotal">$0.00</strong>
+                </div>
+                <div class="cart-summary-line">
+                    <span>Estimated Tax (8%):</span>
+                    <strong id="cartTax">$0.00</strong>
+                </div>
+                <div class="cart-summary-line total-line">
+                    <span>Total Amount:</span>
+                    <strong id="cartTotal">$0.00</strong>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                    Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
